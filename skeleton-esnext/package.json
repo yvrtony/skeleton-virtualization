@@ -67,11 +67,13 @@
   },
   "jspm": {
     "dependencies": {
+      "apollo-client": "npm:apollo-client@^0.4.5",
       "aurelia-animator-css": "npm:aurelia-animator-css@^1.0.0-rc.1.0.0",
       "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0-rc.1.0.0",
       "aurelia-fetch-client": "npm:aurelia-fetch-client@^1.0.0-rc.1.0.0",
       "aurelia-framework": "npm:aurelia-framework@^1.0.0-rc.1.0.0",
       "aurelia-history-browser": "npm:aurelia-history-browser@^1.0.0-rc.1.0.0",
+      "aurelia-kendoui-bridge": "npm:aurelia-kendoui-bridge@^0.11.9",
       "aurelia-loader-default": "npm:aurelia-loader-default@^1.0.0-rc.1.0.0",
       "aurelia-logging-console": "npm:aurelia-logging-console@^1.0.0-rc.1.0.0",
       "aurelia-pal-browser": "npm:aurelia-pal-browser@^1.0.0-rc.1.0.0",
@@ -82,11 +84,20 @@
       "aurelia-templating-router": "npm:aurelia-templating-router@^1.0.0-rc.1.0.0",
       "bluebird": "npm:bluebird@3.4.1",
       "bootstrap": "github:twbs/bootstrap@^3.3.6",
+      "css": "github:systemjs/plugin-css@^0.1.23",
       "fetch": "github:github/fetch@^1.0.0",
       "font-awesome": "npm:font-awesome@4.6.3",
-      "jquery": "npm:jquery@^2.2.4",
+      "graphql": "npm:graphql@^0.6.2",
+      "graphql-tag": "npm:graphql-tag@^0.1.11",
+      "jquery": "npm:jquery@^3.1.0",
+      "kendo-ui": "github:kendo-labs/bower-kendo-ui@^2016.2.630",
       "text": "github:systemjs/plugin-text@^0.0.8"
     },
     "devDependencies": {}
+  },
+  "dependencies": {
+    "apollo-client": "^0.4.5",
+    "graphql": "^0.6.2",
+    "graphql-tag": "^0.1.11"
   }
 }

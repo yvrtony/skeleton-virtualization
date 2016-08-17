@@ -1,20 +1,20 @@
 <template>
   <section class="au-animate">
     <h2>${heading}</h2>
-    <form role="form" submit.delegate="submit()">
-      <div class="form-group">
-        <label for="fn">First Name</label>
-        <input type="text" value.bind="firstName" class="form-control" id="fn" placeholder="first name">
-      </div>
-      <div class="form-group">
-        <label for="ln">Last Name</label>
-        <input type="text" value.bind="lastName" class="form-control" id="ln" placeholder="last name">
-      </div>
-      <div class="form-group">
-        <label>Full Name</label>
-        <p class="help-block">${fullName | upper}</p>
-      </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
+
+    <ak-grid k-data-source.bind="datasource" k-filterable.bind="true" k-sortable.bind="true" k-scrollable.bind="scrollable" k-height.bind="900">
+      <ak-col k-title="Symbol" k-field="field_principal_globalscenario_driven_target_pricesoutputjbp_1csv_Symbol"></ak-col>
+      <ak-col k-title="Name" k-field="field_principal_globalscenario_driven_target_pricesoutputjbp_1csv_Name"></ak-col>
+      <ak-col k-title="% to Target: Origin" k-field="field_principal_globalscenario_driven_target_pricesoutputjbp_1csv_toTargetOrigin"></ak-col>
+      <ak-col k-title="% to Target: Default" k-field="field_principal_globalscenario_driven_target_pricesoutputjbp_1csv_toTargetDefault"></ak-col>
+      <ak-col k-title="DR %: Origin" k-field="field_principal_globalscenario_driven_target_pricesoutputjbp_1csv_DROrigin"></ak-col>
+      <ak-col k-title="DR %: Default" k-field="field_principal_globalscenario_driven_target_pricesoutputjbp_1csv_DRDefault"></ak-col>
+      <ak-col k-title="Target Price: Origin" k-field="field_principal_globalscenario_driven_target_pricesoutputjbp_1csv_TargetPriceOrigin"></ak-col>
+      <ak-col k-title="Target Price: Default" k-field="field_principal_globalscenario_driven_target_pricesoutputjbp_1csv_TargetPriceDefault"></ak-col>
+      <ak-col k-title="Price" k-field="field_principal_globalscenario_driven_target_pricesoutputjbp_1csv_Price"></ak-col>
+      <ak-col k-title="Country" k-field="field_principal_globalscenario_driven_target_pricesoutputjbp_1csv_Country"></ak-col>
+      <ak-col k-title="Sub Industry" k-field="field_principal_globalscenario_driven_target_pricesoutputjbp_1csv_SubIndustry"></ak-col>
+      <ak-col k-title="Market Cap (bil) [USD]" k-field="field_principal_globalscenario_driven_target_pricesoutputjbp_1csv_MarketCapbilUSD"></ak-col>
+    </ak-grid>
   </section>
 </template>
